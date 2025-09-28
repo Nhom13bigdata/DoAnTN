@@ -1,0 +1,23 @@
+Data/
+├─ Embedding and DB/      # Lưu embedding vector và database
+├─ MFN data/              # Dữ liệu cho MobileFaceNet
+└─ YOLO data/             # Dữ liệu cho YOLO (images + labels)
+
+src/
+└─ DATN/                  # Source code dự án
+   ├─ config/             # File config, hyperparameter
+   ├─ model/              # Model architectures
+   ├─ scripts/            # Scripts tiện ích
+   │  ├─ create_data/     # Script tạo data
+   │  ├─ predict/         # Script dự đoán
+   │  └─ training/        # Script huấn luyện
+   └─ Weights/            # Trọng số huấn luyện
+       ├─ MFN Weights/
+       └─ YOLO Weights/
+
+Deploy/
+└─ FastAPI/               # Triển khai web
+   ├─ API/                # Endpoint FastAPI
+   ├─ Module/             # Các module xử lý
+   └─ Service/            # Logic service
+└─ UI_WEB/                # Front-end web (HTML/CSS/JS)
