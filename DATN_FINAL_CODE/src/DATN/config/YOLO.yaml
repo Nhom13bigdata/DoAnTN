@@ -1,0 +1,12 @@
+# Thư mục gốc dataset
+path: E:\Desktop\DATN_FINAL_CODE\Data\YOLO data
+
+# Thư mục chứa ảnh (train/val/test)
+train: images/train
+val:   images/val
+test:  images/test
+
+# Danh sách lớp(class)
+nc: 1
+names:
+  0: face
