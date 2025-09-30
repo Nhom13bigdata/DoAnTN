@@ -66,7 +66,7 @@ class MFNRecognizer:
             embedding = embedding_tensor.cpu().numpy().astype('float32') # chuyển sang numpy để dùng với FAISS
         return embedding
 
-    def recognize_face(self, face_img, distance_threshold=0.8):
+    def recognize_face(self, face_img, distance_threshold=1.5):
         """
         Nhận diện khuôn mặt bằng embedding và FAISS.
 
@@ -96,6 +96,7 @@ class MFNRecognizer:
             return -1
 
         return int(nearest_id)
+
 
 
 
